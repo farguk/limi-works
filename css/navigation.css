@@ -1,0 +1,180 @@
+/* Navigation */
+/*.container > nav {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.container-fluid > nav {
+	margin-left: 0;
+	margin-right: 0;
+}*/
+
+nav {
+	display: block;
+	z-index: 400;
+	-webkit-transform:translateZ(1px);
+	-moz-transform:translateZ(1px);
+	-o-transform:translateZ(1px);
+	transform:translateZ(1px);
+}
+ul.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+	.nav-h > ul {
+		-moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		background-color: #222;
+		border-radius: 3px;
+		box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		display: block;
+	}
+	.nav-h li {
+		display: inline-block;
+	}
+	.nav-h li a {
+		color: #9d9d9d;
+		display: block;
+		font-size: 1.7em;
+		font-weight: 300;
+		line-height: 48px;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition: background 0.2s ease-in;
+		-moz-transition: background 0.2s ease-in;
+		-ms-transition: background 0.2s ease-in;
+		-o-transition: background 0.2s ease-in;
+		transition: background 0.2s ease-in;
+	}
+		.nav-h li a:hover,
+		.nav-h li a:focus {
+			color: #fff;
+			text-decoration: underline;
+		}
+
+	.navbar-header {
+		float: left;
+		background-color: inherit;
+	}
+	.navbar-logo img {
+		width: auto;
+		float: right;
+		margin-right: -15%;
+	}
+
+	#menu {
+		left: -9999px;
+		position: absolute;
+		top: -9999px;
+		display: none;
+	}
+	.nav-h label {
+		color: #fff;
+		cursor: pointer;
+		display: none;
+		height: 4.1em;
+		left: 0;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		user-select: none;
+		width: 4em;
+		text-align: left;
+		color: #333;
+		background-color: #fff;
+		padding: 30px 14px;
+		margin-top: -2px;
+	}
+
+@media screen and (max-width: 767px) {
+	
+	nav{
+		background: #fff;
+		border-bottom: 3px solid #280000;
+	}
+	.nav-h{
+		box-shadow: none;
+	}
+	.navbar-header{
+		float: right;
+		background-color: #fff;
+	}	
+	.navbar-logo img{
+		margin-right: 0;
+	}
+	.nav-h label {
+		display: block;
+	}
+	.nav-h label:after {
+		content: "МЕНЮ";
+		font-size: 1em;
+		position: absolute;
+	}
+		.nav-h label:hover,
+		#menu:checked ~ label {
+			color: #999;
+		}
+	#menu:checked ~ label:after{
+		content: "Закрыть";
+	}
+	#menu:checked ~ label{
+		position: absolute;
+		width: 100%;
+	}
+	.nav-h ul{
+		border-radius: 0;
+		-moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		display: block;
+		left: -50em;
+		max-width: 500px;
+		min-width: 270px;
+		opacity: 0;
+		position: absolute;
+		top: 8em;
+		transition: .3s linear;
+		width: 80%;
+		background-color: #fff;
+		z-index: 400;
+	}
+	.nav-h ul > li {
+		width: 100%;
+	}
+	#menu:checked ~ ul {
+		left: -10px;
+		opacity: 1;
+		text-align: left;
+	}
+
+}
+
+.nav-v > ul {
+	background-color: #222;
+	display: block;
+	width: 100%;
+}
+.nav-v li {
+	display: block;
+}
+.nav-v li a {
+	color: #fff;
+	display: block;
+	font-size: 1.7em;
+	font-weight: 300;
+	line-height: 48px; 
+	padding: 10px 15px;
+	text-decoration: none;
+}
+	.nav-v li a:hover,
+	.nav-v li a:focus {
+		color: #fff;
+		text-decoration: underline;
+	}	
+
+.nav-f {
+	left: 0; 
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+/* Navigation end */

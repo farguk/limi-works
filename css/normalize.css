@@ -1,0 +1,105 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	height: 100%;
+	line-height: 1;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Normalyze/Reset end */
+
+/* 
+	Text properties
+		3pt = 4px 1em= 100% = 10px
+	
+	Color
+		red = cc0000;
+		grey = 9a9a9a;
+*/
+h1 {
+	font-size:3.2em;
+}
+	h2 {
+		font-size:2.4em;
+	}
+	h3 {
+		font-size:1.8em;
+	}
+	h4 {
+		font-size:1.6em;
+	}
+	h5 {
+		font-size:1.3em;
+	}
+	h6 {
+		font-size:1.1em;
+	}
+p,
+span {
+	color: #333;
+	font-size: 1.4em;
+	line-height: 125%;
+}
+li {
+	font-size: 1em;
+}
+p {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+a {
+	font-size: 1em;
+	text-decoration: none;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+/* Text properties end */
