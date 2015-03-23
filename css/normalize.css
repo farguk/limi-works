@@ -103,4 +103,32 @@ a {
 	a:hover {
 		text-decoration: underline;
 	}
+
+.form-sing-up input,
+.form-sing-up a {
+	font-size: 1.4em;
+	margin: 14px 3px;
+	outline: none;
+	padding: 5px 7px;
+}
+	.form-sing-up .submit,
+	.form-sing-up a {
+		background-color: #666;
+		border-radius: 3px;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		font-family: 'Open Sans', sans-serif;
+		outline: none;
+		padding: 5px 15px;
+
+		-moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	}
+		.form-sing-up .submit:hover, 
+		.form-sing-up a:hover {
+			background-color: #555;
+			text-decoration: none;
+		}
 /* Text properties end */
